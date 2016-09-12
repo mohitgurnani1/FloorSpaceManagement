@@ -4,373 +4,69 @@ var sampleInput = {
   "maximum_x": 19,
   "minimum_y": 0,
   "maximum_y": 23,
-  "desks": [
-  {
-    "deskId": 38,
-    "x": 10,
-    "y": 12,
-    "width": 1,
-    "height": 2,
-    "brid": ""
-  },
-  {
-    "deskId": 39,
-    "x": 10,
-    "y": 14,
-    "width": 1,
-    "height": 2,
-    "brid": ""
-  },
-  {
-    "deskId": 40,
-    "x": 10,
-    "y": 16,
-    "width": 1,
-    "height": 2,
-    "brid": ""
-  },
-  {
-    "deskId": 10909000,
-    "x": 4,
-    "y": 19,
+  "tables": [{
+    "x": 1,
+    "y": 1,
     "width": 3,
-    "height": 3,
-    "brid": ""
-  },
-  {
-    "deskId": 24,
-    "x": 7,
-    "y": 12,
-    "width": 1,
     "height": 2,
-    "brid": ""
+    "desks":[[{
+      "deskid": 1,
+      "brid": ""
+    },
+    {
+      "deskid": 2,
+      "brid": ""
+    },
+    {
+      "deskid": 2,
+      "brid": ""
+    }],
+    [{
+      "deskid": 3,
+      "brid": ""
+    },
+    {
+      "deskid": 4,
+      "brid": ""
+    }]]
   },
   {
-    "deskId": 25,
-    "x": 7,
-    "y": 14,
-    "width": 1,
-    "height": 2,
-    "brid": ""
-  },
-  {
-    "deskId": 26,
-    "x": 7,
-    "y": 16,
-    "width": 1,
-    "height": 2,
-    "brid": ""
-  },
-  {
-    "deskId": 35,
-    "x": 8,
-    "y": 12,
-    "width": 1,
-    "height": 2,
-    "brid": ""
-  },
-  {
-    "deskId": 36,
-    "x": 8,
-    "y": 14,
-    "width": 1,
-    "height": 2,
-    "brid": ""
-  },
-  {
-    "deskId": 37,
-    "x": 8,
-    "y": 16,
-    "width": 1,
-    "height": 2,
-    "brid": ""
-  },
-  {
-    "deskId": 1,
-    "x": 1,
-    "y": 3,
-    "width": 1,
-    "height": 2,
-    "brid": ""
-  },
-  {
-    "deskId": 2,
-    "x": 2,
-    "y": 3,
-    "width": 1,
-    "height": 2,
-    "brid": ""
-  },
-  {
-    "deskId": 3,
-    "x": 3,
-    "y": 3,
-    "width": 1,
-    "height": 2,
-    "brid": ""
-  },
-  {
-    "deskId": 4,
-    "x": 4,
-    "y": 3,
-    "width": 1,
-    "height": 2,
-    "brid": ""
-  },
-  {
-    "deskId": 5,
-    "x": 5,
-    "y": 3,
-    "width": 1,
-    "height": 2,
-    "brid": ""
-  },
-  {
-    "deskId": 6,
-    "x": 1,
-    "y": 6,
-    "width": 1,
-    "height": 2,
-    "brid": ""
-  },
-  {
-    "deskId": 7,
-    "x": 2,
-    "y": 6,
-    "width": 1,
-    "height": 2,
-    "brid": ""
-  },
-  {
-    "deskId": 8,
-    "x": 3,
-    "y": 6,
-    "width": 1,
-    "height": 2,
-    "brid": ""
-  },
-  {
-    "deskId": 9,
-    "x": 4,
-    "y": 6,
-    "width": 1,
-    "height": 2,
-    "brid": ""
-  },
-  {
-    "deskId": 10,
-    "x": 5,
-    "y": 6,
-    "width": 1,
-    "height": 2,
-    "brid": ""
-  },
-  {
-    "deskId": 16,
     "x": 10,
-    "y": 3,
-    "width": 1,
-    "height": 1,
-    "brid": ""
-  },
-  {
-    "deskId": 18,
-    "x": 11,
-    "y": 3,
-    "width": 1,
-    "height": 1,
-    "brid": ""
-  },
-  {
-    "deskId": 20,
-    "x": 12,
-    "y": 3,
-    "width": 1,
-    "height": 1,
-    "brid": ""
-  },
-  {
-    "deskId": 22,
-    "x": 13,
-    "y": 3,
-    "width": 1,
-    "height": 1,
-    "brid": ""
-  },
-  {
-    "deskId": 17,
-    "x": 10,
-    "y": 4,
-    "width": 1,
-    "height": 1,
-    "brid": ""
-  },
-  {
-    "deskId": 19,
-    "x": 11,
-    "y": 4,
-    "width": 1,
-    "height": 1,
-    "brid": ""
-  },
-  {
-    "deskId": 21,
-    "x": 12,
-    "y": 4,
-    "width": 1,
-    "height": 1,
-    "brid": ""
-  },
-  {
-    "deskId": 23,
-    "x": 13,
-    "y": 4,
-    "width": 1,
-    "height": 1,
-    "brid": ""
-  },
-  {
-    "deskId": 27,
-    "x": 10,
-    "y": 6,
-    "width": 1,
-    "height": 1,
-    "brid": ""
-  },
-  {
-    "deskId": 28,
-    "x": 11,
-    "y": 6,
-    "width": 1,
-    "height": 1,
-    "brid": ""
-  },
-  {
-    "deskId": 29,
-    "x": 12,
-    "y": 6,
-    "width": 1,
-    "height": 1,
-    "brid": ""
-  },
-  {
-    "deskId": 30,
-    "x": 13,
-    "y": 6,
-    "width": 1,
-    "height": 1,
-    "brid": ""
-  },
-  {
-    "deskId": 31,
-    "x": 10,
-    "y": 7,
-    "width": 1,
-    "height": 1,
-    "brid": ""
-  },
-  {
-    "deskId": 32,
-    "x": 11,
-    "y": 7,
-    "width": 1,
-    "height": 1,
-    "brid": ""
-  },
-  {
-    "deskId": 33,
-    "x": 12,
-    "y": 7,
-    "width": 1,
-    "height": 1,
-    "brid": ""
-  },
-  {
-    "deskId": 34,
-    "x": 13,
-    "y": 7,
-    "width": 1,
-    "height": 1,
-    "brid": ""
-  },
-  {
-    "deskId": 11,
-    "x": 1,
-    "y": 9,
-    "width": 1,
-    "height": 1,
-    "brid": ""
-  },
-  {
-    "deskId": 12,
-    "x": 2,
-    "y": 9,
-    "width": 1,
-    "height": 1,
-    "brid": ""
-  },
-  {
-    "deskId": 13,
-    "x": 3,
-    "y": 9,
-    "width": 1,
-    "height": 1,
-    "brid": ""
-  },
-  {
-    "deskId": 14,
-    "x": 4,
-    "y": 9,
-    "width": 1,
-    "height": 1,
-    "brid": ""
-  },
-  {
-    "deskId": 15,
-    "x": 5,
-    "y": 9,
-    "width": 1,
-    "height": 1,
-    "brid": ""
-  },
-  {
-    "deskId": 41,
-    "x": 13,
-    "y": 17,
-    "width": 1,
-    "height": 1,
-    "brid": ""
-  },
-  {
-    "deskId": 42,
-    "x": 14,
-    "y": 17,
-    "width": 1,
-    "height": 1,
-    "brid": ""
-  },
-  {
-    "deskId": 43,
-    "x": 15,
-    "y": 17,
-    "width": 1,
-    "height": 1,
-    "brid": ""
-  }
-]
+    "y": 10,
+    "width": 2,
+    "height": 4,
+    "desks":[[{
+      "deskid": 1,
+      "brid": ""
+    },
+    {
+      "deskid": 2,
+      "brid": ""
+    }],
+    [{
+      "deskid": 3,
+      "brid": ""
+    },
+    {
+      "deskid": 4,
+      "brid": ""
+    }]]
+  }]
 };
 
-var canvasElement = document.getElementById("workarea");
+
 canvasElement.setAttribute("width", window.innerWidth);
 canvasElement.setAttribute("height", window.innerHeight);
 
 var canvas = new fabric.Canvas('workarea', { selection: false, backgroundColor: "#ffffff"});
 
-function parse(input){
+function initialiseFromDummy(input){
   var inputObj = input;
-  var workarea = new Workarea(inputObj.minimum_x, inputObj.maximum_x, inputObj.minimum_y, inputObj.maximum_y);
-  inputObj.desks.forEach(function(desk){
-    workarea.createDesk(desk);
+  var workarea = new Workarea(inputObj.minimum_x, inputObj.maximum_x, inputObj.minimum_y, inputObj.maximum_y, inputObj.tables.length);
+  inputObj.tables.forEach(function(table){
+    var orientation = (table.height<table.width)?"horizontal":"vertical";
+    workarea.createTableLayout(table, orientation);
+
   });
 }
 
@@ -392,7 +88,7 @@ function initialise(){
   }});
 }
 
-function Workarea(minX, maxX, minY, maxY){
+function Workarea(minX, maxX, minY, maxY, noOfTables){
   this.minX = minX;
   this.minY = minY;
   this.maxX = maxX;
@@ -400,11 +96,89 @@ function Workarea(minX, maxX, minY, maxY){
   this.height = maxY - minY;
   this.width = maxX - minY;
   this.canvas = canvas;
-  this.gridSize = ((window.innerHeight/(this.height))<(window.innerWidth/(this.width))?(window.innerHeight/(this.height))+3:(window.innerWidth/(this.width))+3);
-  this.xGridSize = window.innerWidth/this.width-3;
-  this.yGridSize = window.innerHeight/this.height-3;
+  this.gridSize = ((window.innerHeight/(this.height + 2*noOfTables))<(window.innerWidth/(this.width + 2*noOfTables))?(window.innerHeight/(this.height + 2*noOfTables))+3:(window.innerWidth/(this.width + 2*noOfTables))+3);
 }
-  
+
+
+Workarea.prototype.createTable = function(x,y,width,height){
+  var that = this;
+  fabric.util.loadImage(IMG_PATH + TABLE_PATTERN_FILE, function(img) {
+    that.canvas.add(new fabric.Rect({ 
+      left: x*that.gridSize, 
+      top: y*that.gridSize,  
+      width: width*that.gridSize,
+      height:height*that.gridSize,
+      fill: '#9f9', 
+      originX: 'left', 
+      originY: 'top',
+      rx : 20,
+      ry: 20,
+      hasControls: false,
+      selection: false,
+      fill: new fabric.Pattern({source:img})
+    }));
+  });  
+};
+
+Workarea.prototype.createTableLayout = function(table, orientation){
+  this.createTable(table.x, table.y, table.width, table.height);
+  var desks = table.desks;
+  var chairLayout = {"orientation": orientation, "desks": desks};
+  for(var rowNo=0; rowNo<desks.length; rowNo++){
+    if(orientation == "horizontal"){
+      var noOfDesksOnThisSide = table.desks[rowNo].length;
+      chairLayout.sidePaddingForChair = (table.width - noOfDesksOnThisSide*chairDef.gridsPerChair)/(2*noOfDesksOnThisSide);
+      chairLayout.variableCoordinate = table.x;
+      chairLayout.fixedCoordinate = table.y;
+      if(rowNo == 1){chairLayout.fixedCoordinate += table.height; }
+      else{chairLayout.fixedCoordinate -= 1;}
+      this.createChairsOnOneSide(chairLayout);
+    }
+    else if(orientation == "vertical"){
+      var noOfDesksOnThisSide = table.desks[rowNo].length;
+      chairLayout.sidePaddingForChair = (table.height - noOfDesksOnThisSide*chairDef.gridsPerChair)/(2*noOfDesksOnThisSide);
+      chairLayout.variableCoordinate = table.y;
+      
+      chairLayout.fixedCoordinate = table.x;
+      if(rowNo == 1){chairLayout.fixedCoordinate += table.width}
+      else{chairLayout.fixedCoordinate -= 1;}
+      this.createChairsOnOneSide(chairLayout);
+    }
+  }
+};
+
+Workarea.prototype.createChairsOnOneSide = function(chairLayout){
+  var variableCoordinate = chairLayout.variableCoordinate;
+  console.log(chairLayout.sidePaddingForChair)
+  for(var deskNo=0; deskNo<chairLayout.desks.length; deskNo++){
+    variableCoordinate += chairLayout.sidePaddingForChair;
+    if(chairLayout.orientation == "horizontal"){
+      this.createChair(variableCoordinate, chairLayout.fixedCoordinate, 0, chairLayout.desks[deskNo].deskid, "");
+
+    }
+    else if(chairLayout.orientation == "vertical"){
+      this.createChair(chairLayout.fixedCoordinate, variableCoordinate, 0, chairLayout.desks[deskNo].deskid, "");
+    }
+    variableCoordinate += chairDef.gridsPerChair + chairLayout.sidePaddingForChair;
+  }
+};
+
+Workarea.prototype.createChair = function(x, y, angle, chairId, brid){
+  var that = this;
+  fabric.Image.fromURL(IMG_PATH + CHAIR_FILE, function(chair) {            
+    chair.set({'width':that.gridSize});
+    chair.set({'height':that.gridSize});
+    chair.set({'left':x*that.gridSize});
+    chair.set({'top':y*that.gridSize});
+    chair.set({'hasControls': false});
+    chair.set({'angle': angle});
+    chair.set({'entity': 'chair'})
+    chair.set({'chairId': chairId});
+    chair.set({'brid': brid});
+    that.canvas.add(chair);        
+  });
+};
+
   Workarea.prototype.createDesk = function(desk){
     var that = this;
     that.canvas.add(new fabric.Rect({ 
@@ -435,8 +209,7 @@ function Workarea(minX, maxX, minY, maxY){
 
 
  canvas.on('mouse:over', function(e) {
-    console.log(e.target);
-    if(e.target.entity == "desk"){
+     if(e.target.entity == "desk"){
       var element = e.target;
       e.target.set({fill:"#ccc"})
       var style = "display:block; position:fixed; overflow:hidden; background-color: black; color:white; padding:10px; box-shadow: 1px 1px 2px grey; border-radius:5px"
@@ -473,5 +246,5 @@ function Workarea(minX, maxX, minY, maxY){
     tooltipSpan.style.left = (x + 20) + 'px';
 }; 
 
-initialise();
-//parse(sampleInput);
+//initialise();
+initialiseFromDummy(sampleInput);

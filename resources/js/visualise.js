@@ -7,9 +7,10 @@ function initialiseFromDummy(input){
 }
 
 function initialise(){
+  document.getElementById("loader").setAttribute('style', "display:block")
   $.ajax({url: GET_LAYOUT_URL, success: function(result){
+    document.getElementById("loader").setAttribute('style', "display:hidden")
     var inputObj = result;
-    var workarea = new Workarea(inputObj.minimum_x, inputObj.maximum_x, inputObj.minimum_y, inputObj.maximum_y);
     $.ajax({url: GET_DESK_URL, success: function(result){
       var deskList = result;
       deskList.forEach(function(desk){
@@ -18,7 +19,8 @@ function initialise(){
     }})
   },
   error: function(error, statusText){
-    alert(statusText);
+    document.getElementById("loader").setAttribute('style', "display:none");
+    initialiseFromDummy(sampleInput);
   }});
 }
 
@@ -32,5 +34,5 @@ function initialise(){
   
 window.onload = function(e){
 //initialise();
-initialiseFromDummy(sampleInput);
+initialise();
 }

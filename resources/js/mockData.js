@@ -1,14 +1,14 @@
 var sampleInput = {
   "layoutId": 1,
   "minimum_x": 0,
-  "maximum_x": 20,
+  "maximum_x": 10,
   "minimum_y": 0,
-  "maximum_y": 20,
+  "maximum_y": 10,
   "tables": [
     {
-      "x": 1,
-      "y": 1,
-      "width": 2,
+      "x": 7,
+      "y": 3,
+      "width": 6,
       "height": 3,
       "desks":[
         [
@@ -21,63 +21,33 @@ var sampleInput = {
             "brid": ""
           },
           {
-            "deskid": 2,
-            "brid": ""
-          }
-        ],
-        [
-          {
             "deskid": 3,
             "brid": ""
           },
           {
             "deskid": 4,
             "brid": ""
-          }
-        ]
-      ]
-    },
-    {
-      "x": 4,
-      "y": 1,
-      "width": 1,
-      "height": 4,
-      "desks":[
-        [
-          {
-            "deskid": 1,
-            "brid": ""
           },
           {
-            "deskid": 2,
-            "brid": ""
-          }
-        ],
-      ]
-    },
-    {
-      "x": 8,
-      "y": 1,
-      "width": 3,
-      "height": 4,
-      "desks":[
-        [
-          {
-            "deskid": 1,
-            "brid": ""
-          },
-          {
-            "deskid": 2,
+            "deskid": 5,
             "brid": ""
           }
         ],
         [
           {
-            "deskid": 3,
+            "deskid": 6,
             "brid": ""
           },
           {
-            "deskid": 4,
+            "deskid": 7,
+            "brid": ""
+          },
+          {
+            "deskid": 8,
+            "brid": ""
+          },
+          {
+            "deskid": 9,
             "brid": ""
           }
         ]

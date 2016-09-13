@@ -3,6 +3,7 @@ var IMG_PATH = "./resources/img/";
 var CHAIR_FILE = "chair.png";
 var TABLE_PATTERN_FILE = "table_pattern.jpg";
 var FLOOR_PATTERN_FILE = "floor_pattern.jpg";
+var LOADING_FILE = "loading.gif";
 
 /* API paths */
 var source = "http://192.168.43.184:8080"

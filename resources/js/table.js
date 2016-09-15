@@ -1,9 +1,9 @@
 function Table(tableJSON){
-	this.leftTopPoint = {x: tableJSON.x, y: tableJSON.y},
-	this.width = tableJSON.width;
-	this.height = tableJSON.height;
+	this.leftTopPoint = {x: tableJSON.topLeftX, y: tableJSON.topLeftY},
+	this.width = tableJSON.columns;
+	this.height = tableJSON.rows;
 	this.orientation = (this.width>this.height)?"horizontal":"vertical";
-	this.deskRows = tableJSON.desks;
+	this.deskRows = JSON.parse(tableJSON.deskString);
 }
 
 Table.prototype.createTableLayout = function(){
@@ -41,8 +41,7 @@ Table.prototype.createTableLayoutForRow = function(deskRow){
 	    		x: variableCoord,
 	    		y: fixedCoord,
 	    		angle: chairAngle,
-	    		deskid: this.deskRows[deskRow][deskNo].deskid,
-	    		brid: this.deskRows[deskRow][deskNo].brid
+	    		deskid: this.deskRows[deskRow][deskNo]
 	    	});
 	      	chair.drawChair();
 
@@ -52,8 +51,7 @@ Table.prototype.createTableLayoutForRow = function(deskRow){
 	    		x: fixedCoord,
 	    		y: variableCoord,
 	    		angle: chairAngle,
-	    		deskid: this.deskRows[deskRow].deskid,
-	    		brid: this.deskRows[deskRow].brid
+	    		deskid: this.deskRows[deskRow][deskNo]
 	    	});
 	      	chair.drawChair();
 	    }

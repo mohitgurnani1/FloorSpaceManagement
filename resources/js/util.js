@@ -12,7 +12,6 @@ var GET_DESK_URL = source + "/REST_MAVEN/webresources/mohit/getDeskInfo";
 var GET_EMPLOYEE_URL = "";
 
 
-
 // Defines all quantities wrt gridSize
 var ENV = {
 	gridsPerChair: 1,

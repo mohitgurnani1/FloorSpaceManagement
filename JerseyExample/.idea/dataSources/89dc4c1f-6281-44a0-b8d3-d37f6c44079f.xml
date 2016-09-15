@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - layout_parser@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="layout_parser">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="barclays"/>
+    <schema id="3" name="desk"/>
+    <schema id="4" name="information_schema"/>
+    <schema id="5" name="mysql"/>
+    <schema id="6" name="performance_schema"/>
+    <schema id="7" name="phpmyadmin"/>
+    <schema id="8" name="test"/>
+    <table id="9" parent="1" name="desk"/>
+    <table id="10" parent="1" name="layout_extremes"/>
+    <table id="11" parent="1" name="table_data"/>
+    <column id="12" parent="9" name="u_Id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="13" parent="9" name="location_Id">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="14" parent="9" name="desk_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="15" parent="9" name="x">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="16" parent="9" name="y">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="17" parent="9" name="width">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="18" parent="9" name="height">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="19" parent="9" name="brid">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="20" parent="9" name="PRIMARY">
+      <columns>u_Id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="21" parent="10" name="layout_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="22" parent="10" name="minimum_x">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="23" parent="10" name="minimum_y">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="24" parent="10" name="maximum_x">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="25" parent="10" name="maximum_y">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="26" parent="10" name="PRIMARY">
+      <columns>layout_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="27" parent="11" name="table_uid">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="28" parent="11" name="layout_id">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="29" parent="11" name="table_number">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="30" parent="11" name="top_left_x">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="31" parent="11" name="top_left_y">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="32" parent="11" name="rows">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="33" parent="11" name="columns">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="34" parent="11" name="desk_string">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="35" parent="11" name="PRIMARY">
+      <columns>table_uid</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>

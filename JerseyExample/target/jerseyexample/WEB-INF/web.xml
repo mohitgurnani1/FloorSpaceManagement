@@ -1,0 +1,44 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+    <context-param>
+        <param-name>file-upload</param-name>
+        <param-value>
+            C:\Users\Mohit\Documents\GitHub\FloorSpaceManagement\JerseyExample\target\tomcat\webapps\data
+        </param-value>
+        <description>Location to store uploaded file</description>
+    </context-param>
+    <servlet>
+        <servlet-name>FileHandler</servlet-name>
+        <servlet-class>com.sarthak.servlets.FileHandler</servlet-class>
+    </servlet>
+  <servlet>
+    <servlet-name>HelloWorld</servlet-name>
+    <servlet-class>com.sarthak.servlets.HelloWorld</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>jersey-servlet</servlet-name>
+    <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+    <init-param>
+      <param-name>jersey.config.server.provider.packages</param-name>
+      <param-value>com.sarthak</param-value>
+    </init-param>
+      <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>jersey-servlet</servlet-name>
+    <url-pattern>/rest/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>HelloWorld</servlet-name>
+    <url-pattern>/helloworld</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FileHandler</servlet-name>
+        <url-pattern>/uploadFile</url-pattern>
+    </servlet-mapping>
+</web-app>
+

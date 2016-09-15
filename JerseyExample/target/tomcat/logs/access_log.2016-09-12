@@ -1,0 +1,5 @@
+0:0:0:0:0:0:0:1 - - [12/Sep/2016:19:39:19 +0530] "GET /newjersey HTTP/1.1" 302 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [12/Sep/2016:19:39:20 +0530] "GET /newjersey/ HTTP/1.1" 200 57 http-bio-8080-exec-3 846
+0:0:0:0:0:0:0:1 - - [12/Sep/2016:19:39:53 +0530] "GET /newjersey/rest/hello/mama HTTP/1.1" 200 16 http-bio-8080-exec-4 965
+0:0:0:0:0:0:0:1 - - [12/Sep/2016:19:39:58 +0530] "GET /newjersey/rest/hello/hellomama HTTP/1.1" 200 21 http-bio-8080-exec-6 10
+0:0:0:0:0:0:0:1 - - [12/Sep/2016:19:40:03 +0530] "GET /newjersey/rest/hello/hellomamamamamam HTTP/1.1" 200 28 http-bio-8080-exec-7 5

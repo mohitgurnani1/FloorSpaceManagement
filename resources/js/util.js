@@ -16,4 +16,5 @@ var GET_EMPLOYEE_URL = "";
 var ENV = {
 	gridsPerChair: 1,
 	tableBorderRadiusRatio : 0.125
+	minBlockSizeRatio = 0.1;
 };

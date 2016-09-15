@@ -15,7 +15,7 @@ function initialise(){
   loader.setAttribute('style', "display:block")
   $.ajax({url: GET_LAYOUT_URL, success: function(result){
     var floor = new Floor(inputObj);
-    floor.createFloorLayout();
+    
     loader.setAttribute('style', "display:hidden")
     if(result = ""){
       uploadModal.modal('show');
@@ -23,9 +23,9 @@ function initialise(){
     else{
       var inputObj = result;
       $.ajax({url: GET_DESK_URL, success: function(result){
-        var deskList = result;
-        deskList.forEach(function(desk){
-          workarea.createDesk(desk);
+          var deskList = result;
+          floor.setDesks(desksList);
+          floor.createFloorLayout();
         });
       },
       error: function(error, statusText){
